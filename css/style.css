@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "Gotham XNarrow";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Gotham XNarrow"),
+        url("/fonts/GothamXNarrow-Light.woff2") format("woff2"),
+        url("/fonts/GothamXNarrow-Light.woff") format("woff");
+}
+@font-face {
+    font-family: "Gotham XNarrow";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Gotham XNarrow"),
+        url("/fonts/GothamXNarrow-Medium.woff2") format("woff2"),
+        url("/fonts/GothamXNarrow-Medium.woff") format("woff");
+}
+@font-face {
+    font-family: "Gotham XNarrow";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Gotham XNarrow"),
+        url("/fonts/GothamXNarrow-Bold.woff2") format("woff2"),
+        url("/fonts/GothamXNarrow-Bold.woff") format("woff");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+}
+
+li {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+body {
+    font-family: 'Gotham XNarrow', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #131313;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1200px;
+        padding: 0 80px;
+    }
+
+}
+
+@media (max-width: 485px) {
+    .container {
+        padding: 0 16px;
+    }
+}

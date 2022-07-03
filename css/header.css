@@ -1,0 +1,151 @@
+.header {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.header__image {
+    margin-right: 15px;
+}
+
+.header__head {
+    color: #DDDDE2;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.header__desc {
+    color: #989AA9;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__item {
+    display: inline-block;
+    position: relative;
+}
+
+.header__link {
+    color: #DDDDE2;
+    font-family: "Gotham XNarrow";
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.header__link:hover {
+    color: #1E74EC;
+}
+
+.header__item + .header__item {
+    margin-left: 32px;
+}
+
+.header__item span::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 15px;
+    top: 4px;
+    right: -19px;
+    background-color: #989AA9;
+}
+
+.header__search {
+    position: relative;
+    margin-left: 48px;
+}
+
+.header__search:hover {
+    cursor: pointer;
+}
+
+.header__search::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 50px;
+    top: -13px;
+    left: -23px;
+    background-color: #989AA9;
+}
+
+
+@media (max-width: 1185px) {
+    .header {
+        padding-top: 30px;
+    }
+    .mobile-nav .header__logo {
+        margin-left: 80px;
+    }
+    .header__nav {
+        display: none;
+    }
+    .header__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 150px;
+    }
+    .header__item {
+        display: block;
+        margin-bottom: 40px;
+    }
+    .header__item span::after {
+        display: none;
+    }
+    .header__item + .header__item {
+        margin-left: 0;
+    }
+    .header__search {
+        display: none;
+    }
+    .header__desc {
+        color: #e3e6ea;
+    }
+    .header__link {
+        font-size: 25px;
+    }
+    .header__link:hover {
+        color: #121e30;
+    }
+}
+
+@media (max-width: 600px) {
+    .header__head {
+        font-size: 14px;
+    }
+    .header__desc {
+        font-size: 9px;
+    }
+    .header__image {
+        width: 42px;
+    }
+    .header__list {
+        padding-top: 80px;
+    }
+
+}
+
+@media (max-width: 485px) {
+    .mobile-nav .header__logo {
+        margin-left: 30px;
+    }
+}

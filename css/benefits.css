@@ -1,0 +1,111 @@
+.benefits {
+    padding: 180px 0 180px 0;
+}
+
+.benefits__h2 {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 32px;
+    color: rgba(53, 65, 127, 1);
+}
+
+.benefits__h3 {
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 68px;
+    color: rgba(3, 17, 95, 1);
+    margin-top: 8px;
+}
+
+.benefits__desc {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    color: rgba(83, 86, 112, 1);
+    margin-top: 24px;
+    max-width: 906px;
+    margin-bottom: 64px;
+}
+
+.benefits__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.benefits__item-head {
+    font-size: 22px;
+    font-weight: 350;
+    line-height: 32px;
+    color: rgba(30, 116, 236, 1);
+    height: 64px;
+}
+
+.benefits__item-desc {
+    font-size: 18px;
+    font-weight: 325;
+    line-height: 22px;
+    color: rgba(83, 86, 112, 1);
+}
+
+@media (max-width: 1440px) {
+    .benefits {
+        padding: 80px 0 80px 0;
+    }
+    .benefits__h3 {
+        font-size: 47px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .benefits__items {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 38px;
+        grid-row-gap: 27px;
+    }
+}
+
+@media (max-width: 800px) {
+    .benefits__items {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .benefits__item-head {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 67px;
+        padding-bottom: 15px;
+    }
+    .benefits__item-desc {
+        font-size: 16px;
+        font-weight: 325;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 485px) {
+    .benefits__items {
+        grid-row-gap: 0px;
+     }
+    .benefits__item-head {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 61px;
+    }
+    .benefits__h3 {
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0.02em;
+        max-width: 400px;
+    }
+    .benefits__desc {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 16px;
+        margin-bottom: 40px;
+    }
+}

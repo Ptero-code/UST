@@ -1,0 +1,149 @@
+.about {
+    padding: 180px 0 180px 0;
+}
+
+.about__h2 {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 32px;
+    margin-bottom: 24px;
+}
+
+.about__content {
+    display: flex;
+}
+
+.about__image {
+    margin-right: 40px;
+    flex-basis: 947px;
+    object-fit: cover;
+    max-width: 947px;
+}
+
+.about__text {
+    flex-basis: 450px;
+}
+
+.about__h3 {
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 68px;
+    color: #03115F;
+    margin-bottom: 24px;
+}
+
+.about__desc {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.about__desc + .about__desc {
+    padding-top: 10px;
+}
+
+.about__buttons {
+    display: flex;
+    padding-top: 40px;
+}
+
+.about__btn-vacancy {
+    padding: 14px 40px;
+    border: 2px solid #1E74EC;
+    color: #1E74EC;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 24px;
+    transition: all 0.3s;
+}
+
+.about__btn-vacancy:hover {
+    border-color: #03115F;
+    color: #03115F;
+}
+
+.about__btn-read {
+    padding: 14px 40px;
+    border: none;
+    color: #EEEFF1;
+    background-color: #1E74EC;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.about__btn-read:hover {
+    background-color: #03115F;
+}
+
+
+@media (max-width: 1440px) {
+    .about__image {
+        margin-right: 20px;
+        flex-basis: 750px;
+        object-fit: cover;
+        max-width: 750px;
+    }
+    .about__text {
+        flex-basis: 355px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .about {
+        padding: 80px 0 80px 0;
+    }
+    .about__content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .about__buttons {
+        padding-top: 35px;
+        justify-content: center;
+    }
+    .about__image {
+        margin-right: 0;
+        margin-top: 35px;
+        max-height: 440px;
+        object-fit: none;
+        max-width: 650px;
+    }
+}
+
+@media (max-width: 800px) {
+    .about__image {
+        max-height: 270px;
+        object-fit: contain;
+        max-width: 430px;
+    }
+    .about__h3 {
+        font-size: 47px;
+    }
+}
+
+@media (max-width: 440px) {
+    .about {
+        padding: 35px 0 35px 0;
+    }
+    .about__h2 {
+        margin-bottom: 6px;
+    }
+    .about__h3 {
+        font-size: 36px;
+        margin-bottom: 6px;
+    }
+    .about__desc {
+        font-size: 14px;
+    }
+    .about__image {
+        width: 100%;
+        max-height: 215px;
+    }
+    .about__buttons {
+        flex-direction: column;
+    }
+    .about__btn-vacancy {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
